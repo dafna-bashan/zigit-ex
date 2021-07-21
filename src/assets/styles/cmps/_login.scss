@@ -1,0 +1,38 @@
+.login {
+    h1 {
+        text-align: center;
+        font-size: 30px;
+    }
+    width : 350px;
+    margin: 0 auto;
+
+    form {
+        input {
+            height: 30px;
+            margin-top: 0;
+            margin-bottom: 30px;
+        }
+
+        >* {
+            margin: 5px 0;
+        }
+        .error{
+            &.email{
+                top: 210px;
+            }
+            &.password{
+                top: 305px;
+            }
+            height: 40px;
+            position: absolute;
+            color: red;
+        }
+        button{
+            border: none;
+            padding: 5px 0;
+            border-radius: 5px;
+            background-color: rgb(0, 212, 195);
+        }
+    }
+}
+

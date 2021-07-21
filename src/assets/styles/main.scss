@@ -1,0 +1,32 @@
+// Setup
+@import 'setup/variables';
+@import 'setup/functions';
+@import 'setup/mixins';
+@import 'setup/typography';
+
+// Basics
+@import 'basics/reset';
+@import 'basics/helpers';
+@import 'basics/layout';
+@import 'basics/base';
+@import 'basics/buttons';
+@import 'basics/animation';
+
+
+
+// Pages
+
+@import 'pages/home';
+@import 'pages/app';
+
+
+// user
+
+@import 'cmps/login';
+@import 'cmps/userInfo';
+
+
+// Components
+
+@import 'cmps/header';
+@import 'cmps/footer';

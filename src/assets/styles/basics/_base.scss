@@ -1,0 +1,48 @@
+* {
+    box-sizing: border-box;
+}
+
+
+html {
+    line-height: 1.6;
+    font-family: roboto-regular, sans-serif;
+    color: $fontDarkGrey;
+}
+
+body {
+    font-size: rem(16px);
+    margin   : 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin     : 0 0 0.6em;
+    line-height: 1;
+}
+
+
+img {
+    width: 100%;
+}
+
+
+a {
+    text-decoration: none;
+    &:hover{
+        text-decoration: none;
+    }
+    &:visited{
+        color: $fontDarkGrey;
+    }
+}
+
+
+button {
+    font: inherit;
+}
+
+
