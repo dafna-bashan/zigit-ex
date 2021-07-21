@@ -2,7 +2,6 @@ import 'react-app-polyfill/ie11';
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 import { Formik, Field, Form, FormikHelpers, ErrorMessage } from 'formik';
-import { Button, TextField } from '@material-ui/core';
 import { useDispatch } from 'react-redux';
 import { login } from '../store/actions/userActionsCreators';
 
@@ -47,15 +46,8 @@ export const Login = () => {
         console.log('submittes');
         dispatch(login(values))
         window.location.hash = '/info'
-
-        // setTimeout(() => {
-        //     alert(JSON.stringify(values, null, 2));
-        //     setSubmitting(false);
-        //     window.location.hash = '/info'
-        // }, 500);
     }
 
-    // const TextFieldOutlined = (props) => <TextField {...props} variant="outlined" />
 
     return <div className="login">
 
@@ -80,42 +72,3 @@ export const Login = () => {
         </Formik>
     </div>
 };
-
-// export const Login = () => {
-//     return (
-//         <div>
-//             <h1>Signup</h1>
-//             <Formik
-//                 initialValues={{
-//                     // firstName: '',
-//                     // lastName: '',
-//                     email: '',
-//                     password: ''
-//                 }}
-//                 onSubmit={(
-//                     values: Values,
-//                     { setSubmitting }: FormikHelpers<Values>
-//                 ) => {
-//                     setTimeout(() => {
-//                         alert(JSON.stringify(values, null, 2));
-//                         setSubmitting(false);
-//                     }, 500);
-//                 }}
-//             >
-//                 <Form>
-//                     {/* <label htmlFor="firstName">First Name</label>
-//                     <Field id="firstName" name="firstName" placeholder="John" />
-
-//                     <label htmlFor="lastName">Last Name</label>
-//                     <Field id="lastName" name="lastName" placeholder="Doe" /> */}
-
-//                     <label htmlFor="email">Email</label>
-//                     <Field id="email" name="email" placeholder="john@acme.com" type="email" />
-//                     <label htmlFor="password">Password</label>
-//                     <Field id="password" type="password" name="password" label="password" />
-//                     <button type="submit">Submit</button>
-//                 </Form>
-//             </Formik>
-//         </div>
-//     );
-// };

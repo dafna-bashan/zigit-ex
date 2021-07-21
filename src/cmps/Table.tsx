@@ -2,11 +2,9 @@ import React from 'react'
 import styled from 'styled-components'
 import { Column, useTable, useSortBy } from 'react-table'
 import { useState } from 'react'
-import { Project } from '../store/project.js'
 import { useEffect } from 'react'
 
 interface Props {
-    // columns: FormattedColumn[],
     columns: any[],
     data: any[]
 }

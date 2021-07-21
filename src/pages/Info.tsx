@@ -1,15 +1,12 @@
 import React from 'react'
-import { useState } from 'react'
 import { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { TableCmp } from '../cmps/Table'
 import { getUserProjects } from '../store/actions/userActionsCreators'
-import { Project } from '../store/project'
 import { RootState } from '../store/reducers'
 
 export const Info: React.FC = () => {
 
-    // const [projects, setProjects] = useState<Project[] | null>([])
     const userProjects = useSelector((state: RootState) => state.userModule.projects)
     const user = useSelector((state: RootState) => state.userModule.loggedInUser)
 
